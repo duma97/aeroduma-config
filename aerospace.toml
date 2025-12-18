@@ -1,0 +1,55 @@
+# Default to tiling layout
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'vertical'
+
+# Gaps between windows
+[gaps]
+inner.horizontal = 8
+inner.vertical = 8
+outer.left = 8
+outer.bottom = 8
+outer.top = 8
+outer.right = 8
+
+# Keybindings
+[mode.main.binding]
+# Focus windows
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+alt-left = 'focus left'
+alt-down = 'focus down'
+alt-up = 'focus up'
+alt-right = 'focus right'
+
+# Layout orientation toggle
+alt-o = 'layout horizontal vertical'
+
+# Workspaces - number keys
+cmd-1 = 'workspace 1'
+cmd-2 = 'workspace 2'
+cmd-3 = 'workspace 3'
+cmd-4 = 'workspace 4'
+
+# Workspaces - arrow keys
+cmd-left = 'workspace --wrap-around prev'
+cmd-right = 'workspace --wrap-around next'
+
+# Move windows to workspaces - number keys
+cmd-shift-1 = 'move-node-to-workspace 1'
+cmd-shift-2 = 'move-node-to-workspace 2'
+cmd-shift-3 = 'move-node-to-workspace 3'
+cmd-shift-4 = 'move-node-to-workspace 4'
+
+# Move windows to workspaces - arrow keys
+cmd-shift-left = 'move-node-to-workspace --wrap-around prev'
+cmd-shift-right = 'move-node-to-workspace --wrap-around next'
+
+# App launchers
+ctrl-q = 'exec-and-forget open -na Terminal'
+ctrl-c = 'exec-and-forget open -na "Visual Studio Code"'
+ctrl-b = 'exec-and-forget open -na Zen'
+
+# Window management
+ctrl-alt-w = 'close --quit-if-last-window'
